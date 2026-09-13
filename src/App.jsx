@@ -565,7 +565,8 @@ useEffect(() => {
                   <span className="font-mono text-[10px] text-[#F59E0B] bg-[#F59E0B]/10 px-2 py-0.5 rounded border border-[#F59E0B]/20">REACT WEB APP</span>
                   <div className="flex gap-2 text-slate-400">
                     <a href="https://github.com/dhiman067/assignment-05" target="_blank" rel="noreferrer" className="hover:text-white"><Github className="w-4 h-4" /></a>
-                    <a href="https://development-tool-manager-flame.vercel.app/" className="hover:text-white"><ExternalLink className="w-4 h-4" /></a>
+                    <a href="https://development-tool-manager-flame.vercel.app/"
+                    target="_blank" rel="noreferrer" className="hover:text-white"><ExternalLink className="w-4 h-4" /></a>
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-white group-hover:text-[#F59E0B] transition-colors">
@@ -598,7 +599,7 @@ useEffect(() => {
                   <span className="font-mono text-[10px] text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded border border-[#10B981]/20">JS + TAILWIND + DAISYUI</span>
                   <div className="flex gap-2 text-slate-400">
                     <a href="https://github.com/dhiman067/geometry-genius" target="_blank" rel="noreferrer" className="hover:text-white"><Github className="w-4 h-4" /></a>
-                    <a href="https://geometry-genius-sand.vercel.app/" className="hover:text-white"><ExternalLink className="w-4 h-4" /></a>
+                    <a href="https://geometry-genius-sand.vercel.app/" target="_blank" rel="noreferrer"className="hover:text-white"><ExternalLink className="w-4 h-4" /></a>
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-white group-hover:text-[#F59E0B] transition-colors">
