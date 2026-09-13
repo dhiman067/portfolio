@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import profilePhoto from './assets/Gemini_Generated_Image_fipglnfipglnfipg.jpg';
+import geometryGeniusScreenshot from './assets/GeometryGenius.png';
 import { 
   Mail, 
   Terminal, 
@@ -577,6 +578,13 @@ useEffect(() => {
 
             {/* Project 2 */}
             <div className="bg-[#141822] rounded-xl border border-slate-800 overflow-hidden flex flex-col group hover:border-[#F59E0B]/50 transition-all">
+              <div className="aspect-[16/9] overflow-hidden border-b border-slate-800/60 bg-[#F4EFE7]">
+                <img
+                  src={geometryGeniusScreenshot}
+                  alt="Geometry Genius calculator showing 2D shape area tools"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
               <div className="p-6 pb-4 border-b border-slate-800/60 bg-[#181C28]">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-mono text-[10px] text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded border border-[#10B981]/20">JS + TAILWIND + DAISYUI</span>
@@ -586,17 +594,17 @@ useEffect(() => {
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-white group-hover:text-[#F59E0B] transition-colors">
-                  Math Function Visualizer
+                  Geometry Genius
                 </h3>
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                  A minimal utility tool that inputs algebraic functions and generates real-time visual coordinate plots using modern JavaScript and custom CSS components.
+                  A focused geometry calculator for turning measurements into answers. Users can calculate the area of 2D shapes and the volume of 3D shapes, then review their previous calculations in one clear workspace.
                 </p>
                 <div className="mt-auto flex flex-wrap gap-1.5 font-mono text-[10px] text-slate-300">
                   <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">JavaScript</span>
-                  <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">DaisyUI</span>
-                  <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">HTML5</span>
+                  <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Tailwind CSS</span>
+                  <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Geometry Logic</span>
                 </div>
               </div>
             </div>
