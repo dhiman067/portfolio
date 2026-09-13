@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import profilePhoto from './assets/Gemini_Generated_Image_fipglnfipglnfipg.jpg';
 import geometryGeniusScreenshot from './assets/GeometryGenius.png';
+import devStackScreenshot from './assets/DevStack.png';
 import { 
   Mail, 
   Terminal, 
@@ -552,26 +553,33 @@ useEffect(() => {
             
             {/* Project 1 */}
             <div className="bg-[#141822] rounded-xl border border-slate-800 overflow-hidden flex flex-col group hover:border-[#F59E0B]/50 transition-all">
+              <div className="aspect-[16/9] overflow-hidden border-b border-slate-800/60 bg-white">
+                <img
+                  src={devStackScreenshot}
+                  alt="DevStack tool selection dashboard"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
               <div className="p-6 pb-4 border-b border-slate-800/60 bg-[#181C28]">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="font-mono text-[10px] text-[#F59E0B] bg-[#F59E0B]/10 px-2 py-0.5 rounded border border-[#F59E0B]/20">REACT + TAILWIND</span>
+                  <span className="font-mono text-[10px] text-[#F59E0B] bg-[#F59E0B]/10 px-2 py-0.5 rounded border border-[#F59E0B]/20">REACT WEB APP</span>
                   <div className="flex gap-2 text-slate-400">
-                    <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white"><Github className="w-4 h-4" /></a>
-                    <a href="#" className="hover:text-white"><ExternalLink className="w-4 h-4" /></a>
+                    <a href="https://github.com/dhiman067/assignment-05" target="_blank" rel="noreferrer" className="hover:text-white"><Github className="w-4 h-4" /></a>
+                    <a href="https://development-tool-manager-flame.vercel.app/" className="hover:text-white"><ExternalLink className="w-4 h-4" /></a>
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-white group-hover:text-[#F59E0B] transition-colors">
-                  Interactive Dev Showcase
+                  DevStack
                 </h3>
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-                  A high-end developer portfolio featuring live terminal mockups, mathematical logic transformations, dark aesthetic design, and responsive elements.
+                  A modern, responsive React application that helps developers choose the right tools for a project. Users can explore and compare technologies, build a project-specific stack, and track the tools they have already used.
                 </p>
                 <div className="mt-auto flex flex-wrap gap-1.5 font-mono text-[10px] text-slate-300">
                   <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">React</span>
-                  <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">TypeScript</span>
-                  <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Tailwind</span>
+                  <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Responsive UI</span>
+                  <span className="px-2 py-0.5 bg-slate-900 rounded border border-slate-800">Tool Discovery</span>
                 </div>
               </div>
             </div>
@@ -589,8 +597,8 @@ useEffect(() => {
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-mono text-[10px] text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded border border-[#10B981]/20">JS + TAILWIND + DAISYUI</span>
                   <div className="flex gap-2 text-slate-400">
-                    <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white"><Github className="w-4 h-4" /></a>
-                    <a href="#" className="hover:text-white"><ExternalLink className="w-4 h-4" /></a>
+                    <a href="https://github.com/dhiman067/geometry-genius" target="_blank" rel="noreferrer" className="hover:text-white"><Github className="w-4 h-4" /></a>
+                    <a href="https://geometry-genius-sand.vercel.app/" className="hover:text-white"><ExternalLink className="w-4 h-4" /></a>
                   </div>
                 </div>
                 <h3 className="text-lg font-bold text-white group-hover:text-[#F59E0B] transition-colors">
