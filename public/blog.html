@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf9ff" />
+    <meta name="description" content="Dhiman Paul's notes and stories about movies, books, and video games." />
+    <title>Dhiman's Blog</title>
+    <style>
+      :root { color: #29213a; background: #faf9ff; font-family: 'Avenir Next', Avenir, 'Segoe UI', sans-serif; --violet: #6039a3; --dark: #402071; --muted: #6e6879; --line: #e5e0ed; }
+      * { box-sizing: border-box; }
+      body { min-width: 320px; margin: 0; background-image: radial-gradient(#7656aa12 0.7px, transparent 0.7px); background-size: 18px 18px; }
+      a { color: inherit; text-decoration: none; }
+      a:focus-visible { outline: 3px solid #9575cd; outline-offset: 4px; }
+      .wrap { width: min(980px, calc(100% - 48px)); margin-inline: auto; }
+      header { min-height: 76px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+      .mark { color: var(--dark); font: 700 26px Georgia, serif; }
+      .mark span { color: #9876cf; }
+      .back { color: var(--violet); font-size: 13px; font-weight: 650; }
+      main { padding-block: 72px 100px; }
+      .eyebrow { margin: 0 0 14px; color: var(--violet); font-size: 11px; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
+      h1, h2 { color: var(--dark); font-family: Georgia, 'Times New Roman', serif; font-weight: 500; }
+      h1 { margin: 0; font-size: 52px; }
+      .intro { max-width: 570px; margin: 15px 0 34px; color: var(--muted); font-size: 15px; line-height: 1.8; }
+      nav { display: flex; flex-wrap: wrap; gap: 9px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+      nav a { padding: 9px 13px; border: 1px solid #ded6e9; border-radius: 3px; color: #625672; background: #fff; font-size: 12px; }
+      nav a[aria-current="page"] { border-color: var(--violet); color: #fff; background: var(--violet); }
+      .empty { min-height: 245px; display: grid; align-content: center; justify-items: center; margin-top: 27px; padding: 30px; border: 1px solid var(--line); background: #ffffffb8; text-align: center; }
+      .empty-mark { width: 48px; height: 48px; display: grid; place-items: center; margin-bottom: 15px; border: 1px solid #d6c9e7; border-radius: 50%; color: var(--violet); background: #f0ecf7; font: 22px Georgia, serif; }
+      h2 { margin: 0 0 8px; font-size: 25px; }
+      .empty p { max-width: 380px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+      footer { padding-block: 18px; border-top: 1px solid var(--line); color: #817b8b; font-size: 11px; }
+      @media (max-width: 540px) { .wrap { width: calc(100% - 32px); } main { padding-block: 50px 70px; } h1 { font-size: 42px; } .intro { font-size: 14px; } }
+    </style>
+  </head>
+  <body>
+    <header class="wrap">
+      <a class="mark" href="/">DP<span>.</span></a>
+      <a class="back" href="/#hobbies">← Back to portfolio</a>
+    </header>
+    <main class="wrap">
+      <p class="eyebrow" id="topic-eyebrow">Dhiman's blog</p>
+      <h1 id="topic-title">A little about everything.</h1>
+      <p class="intro" id="topic-intro">Thoughts, notes, and recommendations from things I enjoy beyond coding.</p>
+      <nav aria-label="Blog categories">
+        <a href="/blog.html?topic=movies" data-topic="movies">Movies</a>
+        <a href="/blog.html?topic=books" data-topic="books">Books</a>
+        <a href="/blog.html?topic=games" data-topic="games">Video games</a>
+      </nav>
+      <section class="empty" aria-live="polite">
+        <span class="empty-mark" aria-hidden="true">✳</span>
+        <h2 id="empty-title">Stories coming soon</h2>
+        <p id="empty-description">Posts in this category will appear here. Check back soon.</p>
+      </section>
+    </main>
+    <footer class="wrap">© <span id="year"></span> Dhiman Paul</footer>
+    <script>
+      const topics = {
+        movies: { title: 'Stories on screen.', intro: 'Films I love, scenes I remember, and thoughts on the stories that stay with me.', label: 'Movies' },
+        books: { title: 'Pages worth turning.', intro: 'Reading notes, favorite passages, and books that gave me a new perspective.', label: 'Books' },
+        games: { title: 'Worlds worth exploring.', intro: 'Games, memorable worlds, clever mechanics, and the details that make play feel special.', label: 'Video games' },
+      };
+      const topicKey = new URLSearchParams(window.location.search).get('topic');
+      const topic = topics[topicKey] || topics.movies;
+      document.title = `${topic.label} | Dhiman's Blog`;
+      document.querySelector('#topic-eyebrow').textContent = `${topic.label} · Dhiman's blog`;
+      document.querySelector('#topic-title').textContent = topic.title;
+      document.querySelector('#topic-intro').textContent = topic.intro;
+      document.querySelector('#empty-description').textContent = `Posts about ${topic.label.toLowerCase()} will appear here. Check back soon.`;
+      document.querySelector(`[data-topic="${topicKey || 'movies'}"]`)?.setAttribute('aria-current', 'page');
+      document.querySelector('#year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
