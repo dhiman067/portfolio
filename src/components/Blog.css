@@ -151,3 +151,218 @@
 @media (prefers-reduced-motion: reduce) {
   .blog-page *, .blog-page *::before, .blog-page *::after { transition-duration: 0.01ms !important; }
 }
+
+.blog-page {
+  --blog-accent: #70519a;
+  --blog-accent-soft: #eee8f5;
+  min-height: 100vh;
+  color: #322e37;
+  background-color: #f7f5f0;
+  background-image: radial-gradient(#55456d0d 0.75px, transparent 0.75px);
+  background-size: 20px 20px;
+}
+
+.blog-topic-movies { --blog-accent: #9a5b3c; --blog-accent-soft: #f4e9e1; }
+.blog-topic-games { --blog-accent: #39746e; --blog-accent-soft: #e4efec; }
+.blog-wrap { width: min(1060px, calc(100% - 56px)); }
+.blog-header {
+  min-height: 88px;
+  border-color: #dedad2;
+}
+.blog-identity { display: inline-flex; align-items: center; gap: 12px; }
+.blog-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ded7e5;
+  border-radius: 50%;
+  color: #40334e !important;
+  background: #fff;
+  font-size: 17px;
+}
+.blog-mark span { color: var(--blog-accent); }
+.blog-identity-copy { display: grid; gap: 3px; }
+.blog-identity-copy strong { color: #322e37; font-size: 13px; font-weight: 700; }
+.blog-identity-copy small { color: #8a8490; font-size: 9px; font-weight: 750; letter-spacing: 0.13em; }
+.blog-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #625b68 !important;
+  font-size: 12px;
+  transition: color 160ms ease;
+}
+.blog-back:hover { color: var(--blog-accent) !important; }
+.blog-back span { font-size: 16px; }
+.blog-main { min-height: calc(100vh - 164px); padding-block: 66px 96px; }
+.blog-main h1, .blog-main h2 { color: #30283a; }
+.blog-main h1 { max-width: 800px; font-size: clamp(42px, 6vw, 66px); letter-spacing: -0.04em; }
+.blog-eyebrow { color: var(--blog-accent); }
+.blog-hero {
+  position: relative;
+  padding: 0 0 31px;
+  border-bottom: 1px solid #dedad2;
+}
+.blog-hero .blog-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 17px;
+}
+.blog-hero .blog-eyebrow::before {
+  width: 19px;
+  height: 1px;
+  content: '';
+  background: var(--blog-accent);
+}
+.blog-intro { max-width: 590px; margin: 16px 0 0; color: #746e78; font-size: 15px; line-height: 1.85; }
+.blog-nav {
+  gap: 5px;
+  padding: 20px 0 0;
+  border: 0;
+}
+.blog-nav a {
+  padding: 9px 15px;
+  border-color: transparent;
+  border-radius: 999px;
+  color: #77717b;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 650;
+  transition: color 160ms ease, background 160ms ease;
+}
+.blog-nav a:hover { color: var(--blog-accent); background: #fff; }
+.blog-nav a[aria-current='page'] {
+  border-color: transparent;
+  color: #fff;
+  background: var(--blog-accent);
+}
+.blog-empty {
+  min-height: 250px;
+  justify-items: start;
+  align-content: center;
+  margin-top: 28px;
+  padding: 40px;
+  border: 1px solid #e6e1d8;
+  background: #fffdf9;
+  text-align: left;
+}
+.blog-empty-mark {
+  margin-bottom: 20px;
+  border-color: color-mix(in srgb, var(--blog-accent) 22%, white);
+  color: var(--blog-accent);
+  background: var(--blog-accent-soft);
+}
+.blog-empty p { max-width: 440px; }
+.blog-content { margin-top: 27px; }
+.book-collections { margin-top: 30px; }
+.book-collections-heading { margin-bottom: 23px; }
+.book-collections-heading .blog-eyebrow { margin-bottom: 10px; }
+.book-collections-heading h2 { font-size: 31px; letter-spacing: -0.025em; }
+.book-collection-grid { gap: 18px; }
+.book-collection {
+  border-color: #e5dfd7;
+  background: #fffdf9;
+  box-shadow: 0 3px 12px #332e3708;
+}
+.book-collection:hover {
+  border-color: color-mix(in srgb, var(--blog-accent) 42%, white);
+  box-shadow: 0 14px 32px #332e3712;
+}
+.book-collection-bengali .book-collection-art { background: #e9e0d2; }
+.book-collection-art { height: 184px; }
+.book-collection-count { background: #342e38e8; }
+.book-collection-copy { min-height: 180px; padding: 19px 20px 20px; }
+.book-collection-kicker { color: var(--blog-accent); }
+.book-collection-copy strong { color: #30283a; font-size: 22px; }
+.book-collection-description { color: #77717b; font-size: 12px; }
+.book-collection-link { color: var(--blog-accent); }
+.book-list-heading { padding: 4px 0 20px; }
+.book-list-heading h2 { font-size: 32px; letter-spacing: -0.025em; }
+.book-list-heading > p:last-child { color: #77717b; }
+.book-list-heading .book-list-count { color: #85808a; font-size: 12px; }
+.book-row {
+  min-height: 124px;
+  gap: 20px;
+  padding: 21px 18px;
+  border: 1px solid #e6e1d8;
+  border-bottom: 0;
+  background: #fffdf9;
+}
+.book-row:first-of-type { border-radius: 5px 5px 0 0; }
+.book-row:last-child { border-bottom: 1px solid #e6e1d8; border-radius: 0 0 5px 5px; }
+.book-row:hover { padding-inline: 22px; background: #fff; }
+.book-cover { border: 0; border-radius: 2px; box-shadow: 0 4px 12px #30283a1c; }
+.book-row-copy strong { color: #30283a; font-size: 23px; }
+.book-row-copy > span { color: #79727d; }
+.book-row-copy .book-summary { color: #69636e; }
+.book-row-arrow { color: var(--blog-accent); }
+.pagination-number { border-color: #e3ded5; border-radius: 3px; color: var(--blog-accent) !important; }
+.pagination-number.is-current { border-color: var(--blog-accent); background: var(--blog-accent); }
+.pagination-step { color: var(--blog-accent) !important; }
+.book-review { max-width: 780px; padding-top: 0; }
+.blog-return {
+  margin-bottom: 32px;
+  color: var(--blog-accent) !important;
+  font-size: 12px;
+}
+.review-book-header {
+  grid-template-columns: 164px minmax(0, 1fr);
+  gap: 34px;
+  margin-bottom: 32px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dedad2;
+}
+.review-cover { width: 164px; border-radius: 3px; box-shadow: 0 12px 30px #30283a20; }
+.review-heading .blog-eyebrow { color: var(--blog-accent); }
+.review-heading h2 { color: #30283a; font-size: 40px; letter-spacing: -0.025em; }
+.review-author { color: #79727d; }
+.review-rating { color: var(--blog-accent); }
+.review-body { color: #514b55; font-size: 15px; line-height: 2; }
+.review-body p { margin-bottom: 20px; }
+.review-spoiler summary { color: var(--blog-accent); }
+.review-finished { color: #89838d; }
+.related-books { border-color: #dedad2; }
+.related-books h3 { color: #30283a; }
+.related-book { border-color: #e6e1d8; border-radius: 3px; background: #fffdf9; }
+.related-book:hover { border-color: color-mix(in srgb, var(--blog-accent) 42%, white); background: #fff; }
+.related-book-copy strong { color: #30283a; }
+.related-book-copy .related-book-action { color: var(--blog-accent); }
+.blog-footer { min-height: 78px; border-color: #dedad2; color: #89838d; }
+
+@media (max-width: 700px) {
+  .blog-wrap { width: min(100% - 36px, 560px); }
+  .blog-header { min-height: 76px; }
+  .blog-main { padding-block: 49px 70px; }
+  .blog-main h1 { font-size: clamp(39px, 11vw, 54px); }
+  .blog-hero { padding-bottom: 25px; }
+  .blog-intro { margin-top: 12px; font-size: 14px; }
+  .blog-nav { padding-top: 16px; }
+  .blog-empty { min-height: 220px; padding: 26px; }
+  .book-collection-grid { grid-template-columns: 1fr; }
+  .book-collection-grid { gap: 13px; }
+  .book-collection { display: grid; grid-template-columns: minmax(122px, 0.42fr) minmax(0, 1fr); }
+  .book-collection-art { height: 100%; min-height: 190px; }
+  .book-collection-copy { min-height: 190px; padding: 15px 14px; }
+  .book-row { grid-template-columns: 54px minmax(0, 1fr) 15px; gap: 13px; padding: 17px 10px; }
+  .book-row:hover { padding-inline: 12px; }
+  .book-row-copy strong { font-size: 19px; }
+  .review-book-header { grid-template-columns: 104px minmax(0, 1fr); gap: 18px; }
+  .review-cover { width: 104px; }
+  .review-heading { flex-direction: column; gap: 9px; }
+  .review-heading h2 { font-size: 29px; }
+  .related-book-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 390px) {
+  .blog-wrap { width: calc(100% - 28px); }
+  .blog-identity { gap: 8px; }
+  .blog-mark { width: 37px; height: 37px; }
+  .blog-back { gap: 5px; font-size: 11px; }
+  .book-collection { grid-template-columns: 100px minmax(0, 1fr); }
+  .book-collection-art { min-height: 205px; }
+  .book-collection-cover { width: 58px; height: 88px; }
+  .book-collection-copy { min-height: 205px; padding: 13px 11px; }
+  .book-collection-copy strong { font-size: 17px; }
+}

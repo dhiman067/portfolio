@@ -24,7 +24,7 @@ export default function Contact() {
             <span>{Icon ? <Icon size={18} /> : <span className="facebook-mark">f</span>}{name}</span><ArrowUpRight size={16} />
           </a>
         ))}
-        <a href="/cv.html" target="_blank" rel="noreferrer"><span><span className="cv-mark">CV</span>Curriculum vitae</span><ArrowUpRight size={16} /></a>
+        <a href="/Dhiman%20Paul%20-%20Resume%20(3).pdf" target="_blank" rel="noreferrer"><span><span className="cv-mark">CV</span>Curriculum vitae</span><ArrowUpRight size={16} /></a>
       </div>
     </section>
   );
