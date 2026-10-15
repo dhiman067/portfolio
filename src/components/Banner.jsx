@@ -11,7 +11,7 @@ export default function Banner() {
         <p className="hero-story">My journey began with mathematics, where I learned to break big problems into smaller, logical steps. I found the same satisfaction in building for the web: bringing structure and creativity together to make something people can actually use. I’m always learning, making, and looking for a better way to solve the next problem.</p>
         <div className="hero-actions">
           <a className="button button-primary" href="#projects">Explore my work <ArrowDown size={16} /></a>
-          <a className="text-link" href="mailto:dhimanpaul.dev@gmail.com">Get in touch <ArrowUpRight size={16} /></a>
+          <a className="text-link" href="/Dhiman%20Paul%20-%20Resume%20(3).pdf" target="_blank" rel="noreferrer">Resume <ArrowUpRight size={16} /></a>
         </div>
         <div className="hero-location-row">
           <MapPin className="text-purple-900" size={16} aria-hidden="true" />

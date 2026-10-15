@@ -15,16 +15,15 @@ export default function Contact() {
         <p className="eyebrow">Say hello</p>
         <h2>Have something in mind?<br /><span>Let’s talk.</span></h2>
         <p>I’m open to new connections, collaborations, and conversations about building for the web.</p>
-        <a className="button button-primary" href="mailto:dhimanpaul.dev@gmail.com"><Mail size={17} /> dhimanpaul.dev@gmail.com <ArrowUpRight size={16} /></a>
+        <a className="button button-primary" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQMBfKmgxpwgTrWnxcjwwBVHNfthXfsnNDDKWXlFxsflkZvcVTBsdQBspqrgSSNgTRNHxH" target="_blank" rel="noreferrer"><Mail size={17} /> dhimanpaul119@gmail.com <ArrowUpRight size={16} /></a>
       </div>
       <div className="contact-links scroll-reveal">
-        <h3>Find me around the web</h3>
+        <h3>social links</h3>
         {socialLinks.map(({ name, href, icon: Icon }) => (
           <a href={href} key={name} target="_blank" rel="noreferrer">
             <span>{Icon ? <Icon size={18} /> : <span className="facebook-mark">f</span>}{name}</span><ArrowUpRight size={16} />
           </a>
         ))}
-        <a href="/Dhiman%20Paul%20-%20Resume%20(3).pdf" target="_blank" rel="noreferrer"><span><span className="cv-mark">CV</span>Curriculum vitae</span><ArrowUpRight size={16} /></a>
       </div>
     </section>
   );
