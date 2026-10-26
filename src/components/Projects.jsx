@@ -1,37 +1,52 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
+import bazarDorScreenshot from '../assets/Bazar Dor.png';
+import cinePulseScreenshot from '../assets/CinePulse.png';
 import geometryGeniusScreenshot from '../assets/GeometryGenius.png';
-import devStackScreenshot from '../assets/DevStack.png';
+import personalTaskManagerScreenshot from '../assets/Personal Task Manager.png';
 import SectionHeading from './SectionHeading';
 
 const projects = [
   {
-    name: 'DevStack',
-    description: 'A tool discovery app that helps developers explore technologies, compare options, and build a stack that fits their next project.',
-    features: ['Explore and compare development tools', 'Build a project-specific stack', 'Track tools you have already used'],
-    stack: ['React', 'JavaScript', 'Responsive UI'],
-    image: devStackScreenshot,
-    imageAlt: 'DevStack tool selection dashboard',
-    github: 'https://github.com/dhiman067/assignment-05',
+    name: 'Bazar Dor',
+    description: 'A Bengali-language market price information app- which is made by using Typescript, Next.js based on React, MongoDB, betterAuth -that helps people check everyday product prices, compare price changes, and browse products by category.',
+    features: ['Browse a catalog of everyday products and their market prices.', 'See products whose prices have increased or decreased.', 'Browse products by category.','Create an account or sign in with email and password.'],
+    stack: ['TypeScript', 'Next.JS', 'Mongodb & BetterAuth', 'Tailwind'],
+    image: bazarDorScreenshot,
+    imageAlt: 'Bazar Dor market price information app',
+    github: 'https://github.com/dhiman067/Market-Price-A07-',
     live: 'https://development-tool-manager-flame.vercel.app/',
+  },
+  {
+    name: 'Personal Task Manager',
+    description: 'An app to manage , organize, keep tracks of your daily work to achieve more efficiency and productivity.',
+    features: ['Daily task dashboard for the current day.', 'Add, edit, delete, and complete tasks.', 'Priority management with a 4-quadrant matrix.','Categories and project-style organization.','Local persistence using browser storage.'],
+    stack: ['TypeScript', 'React.Js' , 'Tailwind'],
+    image: personalTaskManagerScreenshot,
+    imageAlt: 'Personal Task Manager dashboard',
+    github: 'https://github.com/dhiman067/personal-task-manager',
+    live: 'https://personal-task-manager-murex-two.vercel.app/',
   },
   {
     name: 'Geometry Genius',
     description: 'A geometry calculator that turns shape measurements into clear, quick answers in one focused workspace.',
     features: ['Calculate areas of 2D shapes', 'Calculate volumes of 3D shapes', 'Review previous calculations'],
-    stack: ['JavaScript', 'Tailwind CSS', 'DaisyUI'],
+    stack: ['JavaScript', 'Tailwind CSS', 'DOM'],
     image: geometryGeniusScreenshot,
     imageAlt: 'Geometry Genius calculator showing shape area tools',
     github: 'https://github.com/dhiman067/geometry-genius',
     live: 'https://geometry-genius-sand.vercel.app/',
   },
   {
-    name: 'Task Logic Dashboard',
-    description: 'A type-safe task manager focused on simple organization, useful filters, and keeping tasks saved between visits.',
-    features: ['Create and organize tasks', 'Filter tasks by status', 'Persist task data locally'],
-    stack: ['React', 'TypeScript', 'Tailwind CSS'],
-    github: 'https://github.com/dhiman067',
+    name: 'Cine Pulse',
+    description: 'Fully responsive portal to find all your favorite tv shows with interactive component states.',
+    features: ['Find all TV shows', 'Browse through genres', 'search your favourite shows.'],
+    stack: ['JavaScript', 'Tailwind CSS', 'React' , 'tvmaze api'],
+    image: cinePulseScreenshot,
+    imageAlt: 'Cine Pulse TV show browsing portal',
+    github: 'https://github.com/dhiman067/CinePulse',
+    live: 'https://cinepulse-site.vercel.app/',
   },
 ];
 
